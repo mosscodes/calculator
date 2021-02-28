@@ -11,35 +11,39 @@
     <center>
         <div id="calculator-container">
             <div id="display-container">
-                <div id="display">0</div>
+                <div id="display">
+                    <div class="top-display" data-top-display></div>
+                    <div class="bottom-display" data-bottom-display></div>
+                </div>
             </div>
             <div id="btn-container">
-                <button class="btn" id="clear">AC</button>
-                <button class="btn" id="negative">+/-</button>
-                <button class="btn" id="percent"><i class="bi bi-percent"></i></button>
-                <button class="btn" id="divide"><i class="bi bi-slash"></i></button>
-                <button class="btn" id="seven">7</button>
-                <button class="btn" id="eight">8</button>
-                <button class="btn" id="nine">9</button>
-                <button class="btn" id="multiply"><i class="bi bi-x"></i></button>
-                <button class="btn" id="four">4</button>
-                <button class="btn" id="five">5</button>
-                <button class="btn" id="six">6</button>
-                <button class="btn" id="subtract"><i class="bi bi-dash"></i></button>  
-                <button class="btn" id="one">1</button>
-                <button class="btn" id="two">2</button>
-                <button class="btn" id="three">3</button>
-                <button class="btn" id="add"><i class="bi bi-plus"></i></button>
-                <button class="btn" id="zero">0</button>
-                <button class="btn" id="decimal"><i class="bi bi-dot"></i></button>
-                <button class="btn" id="equate">=</button>  
+                <!-- row 1 -->
+                <button class="btn" id="clear" data-clear data-key="Backspace">AC</button>
+                <button class="btn" id="delete" data-delete data-key="Delete">DEL</button>
+                <button class="btn op" id="divide" data-operation="÷" data-key="/">÷</button>
+                <!-- row 2 -->
+                <button class="btn num" id="7" data-number="7" data-key="7">7</button>
+                <button class="btn num" id="8" data-number="8" data-key="8">8</button>
+                <button class="btn num" id="9" data-number="9" data-key="9">9</button>
+                <button class="btn op" id="multiply" data-operation="x" data-key="*"><i class="bi bi-x"></i></button>
+                <!-- row 3 -->
+                <button class="btn num" id="4" data-number="4" data-key="4">4</button>
+                <button class="btn num" id="5" data-number="5" data-key="5">5</button>
+                <button class="btn num" id="6" data-number="6" data-key="6">6</button>
+                <button class="btn op" id="subtract" data-operation='-' data-key="-"><i class="bi bi-dash"></i></button>  
+                <!-- row 4 -->
+                <button class="btn num" id="1" data-number="1" data-key="1">1</button>
+                <button class="btn num" id="2" data-number="2" data-key="2">2</button>
+                <button class="btn num" id="3" data-number="3" data-key="3">3</button>
+                <button class="btn op" id="add" data-operation='+' data-key="+"><i class="bi bi-plus"></i></button>
+                <!-- row 5 -->
+                <button class="btn num" id="." data-number="." data-key=".">.</button>
+                <button class="btn num" id="0" data-number="0" data-key="0">0</button>
+                <button class="btn" id="equate" data-equate data-key="Enter">=</button>  
             </div>
         </div>
     </center>
     <script src="calculator.js"></script>
-    <script>
-        // variables for manipulation go here
-    </script>
 </body>
 
 </html> 
